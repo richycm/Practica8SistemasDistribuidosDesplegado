@@ -1,0 +1,107 @@
+# Ejecucion local de PixelVault: docker compose up --build
+# Tienda: http://localhost:8080   ·   Gateway: http://localhost:5000/api/status
+
+x-healthcheck: &health
+  interval: 10s
+  timeout: 5s
+  retries: 5
+  start_period: 10s
+
+services:
+
+  frontend:
+    build: ./frontend
+    container_name: pv_frontend
+    ports: ["8080:80"]
+    depends_on: [api-gateway]
+    networks: [pixelvault]
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: pv_gateway
+    ports: ["5000:5000"]
+    environment:
+      PORT: 5000
+      CATALOG_URL: http://catalog-service:5001
+      CART_URL: http://cart-service:5002
+      PAYMENTS_URL: http://payment-service:5003
+      LIBRARY_URL: http://library-service:5004
+      REVIEWS_URL: http://review-service:5005
+      HTTP_TIMEOUT: 10
+    depends_on:
+      catalog-service: { condition: service_healthy }
+      cart-service: { condition: service_healthy }
+      payment-service: { condition: service_healthy }
+      library-service: { condition: service_healthy }
+      review-service: { condition: service_healthy }
+    networks: [pixelvault]
+
+  catalog-service:
+    build: ./catalog-service
+    container_name: pv_catalog
+    ports: ["5001:5001"]
+    environment: { PORT: 5001, DATA_DIR: /data }
+    volumes: [catalog_data:/data]
+    healthcheck:
+      <<: *health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5001/health')"]
+    networks: [pixelvault]
+
+  cart-service:
+    build: ./cart-service
+    container_name: pv_cart
+    ports: ["5002:5002"]
+    environment: { PORT: 5002, DATA_DIR: /data }
+    volumes: [cart_data:/data]
+    healthcheck:
+      <<: *health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5002/health')"]
+    networks: [pixelvault]
+
+  payment-service:
+    build: ./payment-service
+    container_name: pv_payments
+    ports: ["5003:5003"]
+    environment: { PORT: 5003, DATA_DIR: /data }
+    volumes: [payments_data:/data]
+    healthcheck:
+      <<: *health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5003/health')"]
+    networks: [pixelvault]
+
+  library-service:
+    build: ./library-service
+    container_name: pv_library
+    ports: ["5004:5004"]
+    environment: { PORT: 5004, DATA_DIR: /data }
+    volumes: [library_data:/data]
+    healthcheck:
+      <<: *health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5004/health')"]
+    networks: [pixelvault]
+
+  review-service:
+    build: ./review-service
+    container_name: pv_reviews
+    ports: ["5005:5005"]
+    environment:
+      PORT: 5005
+      DATA_DIR: /data
+      LIBRARY_URL: http://library-service:5004
+      HTTP_TIMEOUT: 10
+    volumes: [reviews_data:/data]
+    healthcheck:
+      <<: *health
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5005/health')"]
+    networks: [pixelvault]
+
+volumes:
+  catalog_data:
+  cart_data:
+  payments_data:
+  library_data:
+  reviews_data:
+
+networks:
+  pixelvault:
+    driver: bridge

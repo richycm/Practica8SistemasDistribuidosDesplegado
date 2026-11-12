@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelVault | Tienda de videojuegos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Pantalla mientras se despiertan los servicios -->
+  <div id="wake" class="wake">
+    <div class="wake-box">
+      <div class="brand big">PIXEL<span>VAULT</span></div>
+      <p id="wake-msg">Conectando con los microservicios...</p>
+      <ul id="wake-list" class="wake-list"></ul>
+      <p class="muted small">En el plan gratuito de Render los servicios se duermen tras 15 min sin uso y tardan hasta un minuto en despertar.</p>
+    </div>
+  </div>
+
+  <!-- Inicio de sesion -->
+  <div id="login" class="login hidden">
+    <form id="login-form" class="login-box">
+      <div class="brand big">PIXEL<span>VAULT</span></div>
+      <p class="muted">Tienda de videojuegos construida con microservicios</p>
+      <label for="login-user">Nombre de usuario</label>
+      <input id="login-user" autocomplete="username" placeholder="por ejemplo: ricardo" maxlength="20" required>
+      <button class="btn primary" type="submit">Entrar</button>
+      <p class="muted small">Los usuarios nuevos reciben $1,500.00 MXN de saldo de bienvenida.</p>
+    </form>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">PIXEL<span>VAULT</span></div>
+    <nav id="nav">
+      <button data-view="store" class="active">Tienda</button>
+      <button data-view="library">Biblioteca</button>
+      <button data-view="cart">Carrito <span id="cart-count" class="pill">0</span></button>
+      <button data-view="wallet">Cartera</button>
+      <button data-view="monitor">Servicios</button>
+    </nav>
+    <div class="user-box">
+      <span id="balance" class="balance">$0.00</span>
+      <span id="username" class="username"></span>
+      <button id="logout" class="link">Salir</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+  <footer class="footer">Datos, precios e imágenes de los juegos tomados de la API pública de la tienda de Steam (Valve) · Proyecto escolar sin fines comerciales · Las compras son simuladas</footer>
+
+  <!-- Detalle de juego -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

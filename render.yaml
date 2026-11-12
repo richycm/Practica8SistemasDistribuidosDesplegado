@@ -1,0 +1,128 @@
+# Blueprint de Render: crea los 6 servicios, el frontend y la base de datos de una vez.
+# En Render: New > Blueprint > seleccionar este repositorio > Apply.
+#
+# IMPORTANTE: cada servicio queda en https://<name>.onrender.com. Si Render agrega un
+# sufijo al nombre (porque ya estaba ocupado), corrige las URL de las variables
+# *_URL y API_URL en el panel (Environment) y vuelve a desplegar.
+
+databases:
+  - name: pixelvault-cmr-db
+    plan: free
+    databaseName: pixelvault
+    user: pixelvault
+
+services:
+  # ── Frontend (sitio estatico) ─────────────────────────────────────────────
+  - type: web
+    name: pixelvault-cmr
+    runtime: static
+    rootDir: frontend
+    buildCommand: 'echo "window.PV_API = \"${API_URL}\";" > config.js'
+    staticPublishPath: .
+    envVars:
+      - key: API_URL
+        value: https://pixelvault-cmr-gateway.onrender.com
+
+  # ── API Gateway ───────────────────────────────────────────────────────────
+  - type: web
+    name: pixelvault-cmr-gateway
+    runtime: docker
+    plan: free
+    dockerfilePath: ./api-gateway/Dockerfile
+    dockerContext: ./api-gateway
+    healthCheckPath: /health
+    buildFilter:
+      paths: ["api-gateway/**"]
+    envVars:
+      - key: CATALOG_URL
+        value: https://pixelvault-cmr-catalog.onrender.com
+      - key: CART_URL
+        value: https://pixelvault-cmr-cart.onrender.com
+      - key: PAYMENTS_URL
+        value: https://pixelvault-cmr-payments.onrender.com
+      - key: LIBRARY_URL
+        value: https://pixelvault-cmr-library.onrender.com
+      - key: REVIEWS_URL
+        value: https://pixelvault-cmr-reviews.onrender.com
+      - key: HTTP_TIMEOUT
+        value: "90"
+
+  # ── Microservicios ────────────────────────────────────────────────────────
+  - type: web
+    name: pixelvault-cmr-catalog
+    runtime: docker
+    plan: free
+    dockerfilePath: ./catalog-service/Dockerfile
+    dockerContext: ./catalog-service
+    healthCheckPath: /health
+    buildFilter:
+      paths: ["catalog-service/**"]
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: pixelvault-cmr-db, property: connectionString }
+      - key: DB_SCHEMA
+        value: catalog
+
+  - type: web
+    name: pixelvault-cmr-cart
+    runtime: docker
+    plan: free
+    dockerfilePath: ./cart-service/Dockerfile
+    dockerContext: ./cart-service
+    healthCheckPath: /health
+    buildFilter:
+      paths: ["cart-service/**"]
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: pixelvault-cmr-db, property: connectionString }
+      - key: DB_SCHEMA
+        value: cart
+
+  - type: web
+    name: pixelvault-cmr-payments
+    runtime: docker
+    plan: free
+    dockerfilePath: ./payment-service/Dockerfile
+    dockerContext: ./payment-service
+    healthCheckPath: /health
+    buildFilter:
+      paths: ["payment-service/**"]
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: pixelvault-cmr-db, property: connectionString }
+      - key: DB_SCHEMA
+        value: payments
+
+  - type: web
+    name: pixelvault-cmr-library
+    runtime: docker
+    plan: free
+    dockerfilePath: ./library-service/Dockerfile
+    dockerContext: ./library-service
+    healthCheckPath: /health
+    buildFilter:
+      paths: ["library-service/**"]
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: pixelvault-cmr-db, property: connectionString }
+      - key: DB_SCHEMA
+        value: library
+
+  - type: web
+    name: pixelvault-cmr-reviews
+    runtime: docker
+    plan: free
+    dockerfilePath: ./review-service/Dockerfile
+    dockerContext: ./review-service
+    healthCheckPath: /health
+    buildFilter:
+      paths: ["review-service/**"]
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase: { name: pixelvault-cmr-db, property: connectionString }
+      - key: DB_SCHEMA
+        value: reviews
+      - key: LIBRARY_URL
+        value: https://pixelvault-cmr-library.onrender.com
+      - key: HTTP_TIMEOUT
+        value: "90"

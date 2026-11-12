@@ -1,0 +1,530 @@
+{
+ "source": "Steam Store API (cc=mx, l=spanish)",
+ "fetched_at": "2026-11-11",
+ "games": [
+  {
+   "id": "elden-ring",
+   "steam_appid": 1245620,
+   "title": "ELDEN RING",
+   "developer": "FromSoftware, Inc.",
+   "genre": "RPG",
+   "price_cents": 97900,
+   "discount_pct": 0,
+   "release_year": 2022,
+   "tags": [
+    "Acción",
+    "Rol",
+    "Un jugador",
+    "Multijugador",
+    "JcJ"
+   ],
+   "description": "EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg",
+   "color1": "#3a1c71",
+   "color2": "#d76d77"
+  },
+  {
+   "id": "cyberpunk-2077",
+   "steam_appid": 1091500,
+   "title": "Cyberpunk 2077",
+   "developer": "CD PROJEKT RED",
+   "genre": "RPG",
+   "price_cents": 99900,
+   "discount_pct": 0,
+   "release_year": 2020,
+   "tags": [
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/48a93d6445a67520ea49833c93dae8f2e68fc540/header_alt_assets_9.jpg",
+   "color1": "#3a1c71",
+   "color2": "#d76d77"
+  },
+  {
+   "id": "the-witcher-3-wild-hunt-remastered",
+   "steam_appid": 292030,
+   "title": "The Witcher 3: Wild Hunt — Remastered",
+   "developer": "CD PROJEKT RED",
+   "genre": "RPG",
+   "price_cents": 69900,
+   "discount_pct": 0,
+   "release_year": 2015,
+   "tags": [
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "The Witcher 3: Wild Hunt — Remastered moderniza el célebre título de rol con multitud de mejoras. En la piel de Geralt de Rivia, cazador de monstruos a sueldo, recorre a tus anchas un tétrico mundo a rebosar de fantasía épica en busca de Ciri, tu hija adoptiva.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/4b5b1ba5061b8a992cc69ac58b4245434edb4296/header.jpg",
+   "color1": "#3a1c71",
+   "color2": "#d76d77"
+  },
+  {
+   "id": "baldurs-gate-3",
+   "steam_appid": 1086940,
+   "title": "Baldur's Gate 3",
+   "developer": "Larian Studios",
+   "genre": "RPG",
+   "price_cents": 129900,
+   "discount_pct": 0,
+   "release_year": 2023,
+   "tags": [
+    "Aventura",
+    "Rol",
+    "Estrategia",
+    "Un jugador",
+    "Multijugador"
+   ],
+   "description": "Reúne a tu grupo y vuelve a los Reinos Olvidados en un relato de compañerismo y traición, sacrificio y supervivencia, además de la atracción de un poder absoluto.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg",
+   "color1": "#3a1c71",
+   "color2": "#d76d77"
+  },
+  {
+   "id": "hades",
+   "steam_appid": 1145360,
+   "title": "Hades",
+   "developer": "Supergiant Games",
+   "genre": "Roguelike",
+   "price_cents": 28299,
+   "discount_pct": 0,
+   "release_year": 2020,
+   "tags": [
+    "Acción",
+    "Indie",
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "Desafía al dios de los muertos y protagoniza una salvaje fuga del Inframundo en este juego de exploración de mazmorras de los creadores de Bastion, Transistor y Pyre.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg",
+   "color1": "#614385",
+   "color2": "#516395"
+  },
+  {
+   "id": "dead-cells",
+   "steam_appid": 588650,
+   "title": "Dead Cells",
+   "developer": "Motion Twin",
+   "genre": "Roguelike",
+   "price_cents": 23399,
+   "discount_pct": 0,
+   "release_year": 2018,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Indie",
+    "Un jugador"
+   ],
+   "description": "Dead Cells es un juego de acción de plataformas de estilo roguelite inspirado en juegos tipo metroidvania. Explorarás un castillo en constante cambio y expansión. Sin puntos de control: mata, muere, aprende, repite.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg",
+   "color1": "#614385",
+   "color2": "#516395"
+  },
+  {
+   "id": "vampire-survivors",
+   "steam_appid": 1794680,
+   "title": "Vampire Survivors",
+   "developer": "poncle",
+   "genre": "Roguelike",
+   "price_cents": 5900,
+   "discount_pct": 0,
+   "release_year": 2022,
+   "tags": [
+    "Acción",
+    "Casual",
+    "Indie",
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "¡Aniquila a miles de criaturas de la noche y sobrevive hasta el amanecer! Vampire Survivors es un juego casual de terror gótico con elementos «roguelite» donde tus decisiones te permitirán aumentar tu poder exponencialmente mientras luchas contra cientos de monstruos.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/2ca07b690dde645771125ed9d9206c4c5fde4dd4/header.jpg",
+   "color1": "#614385",
+   "color2": "#516395"
+  },
+  {
+   "id": "hollow-knight",
+   "steam_appid": 367520,
+   "title": "Hollow Knight",
+   "developer": "Team Cherry",
+   "genre": "Plataformas",
+   "price_cents": 17899,
+   "discount_pct": 0,
+   "release_year": 2017,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Indie",
+    "Un jugador"
+   ],
+   "description": "¡Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino de insectos y héroes que se encuentra en ruinas. Explora cavernas tortuosas, combate contra criaturas corrompidas y entabla amistad con extraños insectos, todo en un estilo clásico en 2D dibujado a mano.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg",
+   "color1": "#1d976c",
+   "color2": "#93f9b9"
+  },
+  {
+   "id": "cuphead",
+   "steam_appid": 268910,
+   "title": "Cuphead",
+   "developer": "Studio MDHR Entertainment Inc.",
+   "genre": "Plataformas",
+   "price_cents": 17999,
+   "discount_pct": 0,
+   "release_year": 2017,
+   "tags": [
+    "Acción",
+    "Indie",
+    "Un jugador",
+    "Multijugador",
+    "Cooperativo"
+   ],
+   "description": "Cuphead es un juego de acción clásico estilo \"dispara y corre\" que se centra en combates contra el jefe. Inspirado en los dibujos animados de los años 30, los aspectos visual y sonoro están diseñados con esmero empleando las mismas técnicas de la época, es decir, animación tradicional a mano, fondos de acuarela y grabaciones...",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg",
+   "color1": "#1d976c",
+   "color2": "#93f9b9"
+  },
+  {
+   "id": "celeste",
+   "steam_appid": 504230,
+   "title": "Celeste",
+   "developer": "Maddy Makes Games Inc.",
+   "genre": "Plataformas",
+   "price_cents": 22900,
+   "discount_pct": 0,
+   "release_year": 2018,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Indie",
+    "Un jugador"
+   ],
+   "description": "Ayuda a Madeline a sobrevivir a los demonios de su interior en su viaje hasta la cima de la montaña Celeste, en este ajustadísimo plataforma, obra de los creadores de TowerFall. Enfréntate a cientos de desafíos diseñados a mano, devela retorcidos secretos y, y reconstruye el misterio de la montaña.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg",
+   "color1": "#1d976c",
+   "color2": "#93f9b9"
+  },
+  {
+   "id": "red-dead-redemption-2",
+   "steam_appid": 1174180,
+   "title": "Red Dead Redemption 2",
+   "developer": "Rockstar Games",
+   "genre": "Aventura",
+   "price_cents": 119900,
+   "discount_pct": 0,
+   "release_year": 2019,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Un jugador",
+    "Multijugador",
+    "JcJ"
+   ],
+   "description": "Arthur Morgan y la banda de Van der Linde se ven obligados a huir. Con agentes federales y cazarrecompensas pisándoles los talones, la banda deberá atracar, robar y luchar para sobrevivir en su camino por el escabroso territorio.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg",
+   "color1": "#0f2027",
+   "color2": "#f7971e"
+  },
+  {
+   "id": "god-of-war",
+   "steam_appid": 1593500,
+   "title": "God of War",
+   "developer": "Santa Monica Studio",
+   "genre": "Aventura",
+   "price_cents": 82900,
+   "discount_pct": 0,
+   "release_year": 2022,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg",
+   "color1": "#0f2027",
+   "color2": "#f7971e"
+  },
+  {
+   "id": "sekiro-shadows-die-twice-goty-edition",
+   "steam_appid": 814380,
+   "title": "Sekiro: Shadows Die Twice - GOTY Edition",
+   "developer": "FromSoftware, Inc.",
+   "genre": "Aventura",
+   "price_cents": 129900,
+   "discount_pct": 0,
+   "release_year": 2019,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Un jugador"
+   ],
+   "description": "Juego del año - The Game Awards 2019 Mejor juego de acción de 2019 - IGN Traza tu propio camino hacia la venganza en la galardonada aventura de FromSoftware, creadores de Bloodborne y la saga Dark Souls. Véngate. Restituye tu honor. Mata con ingenio.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg",
+   "color1": "#0f2027",
+   "color2": "#f7971e"
+  },
+  {
+   "id": "resident-evil-4",
+   "steam_appid": 2050650,
+   "title": "Resident Evil 4",
+   "developer": "CAPCOM Co., Ltd.",
+   "genre": "Terror",
+   "price_cents": 55900,
+   "discount_pct": 0,
+   "release_year": 2023,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Un jugador"
+   ],
+   "description": "Sobrevivir es solo el principio. Con una mecánica de juego modernizada, una historia reimaginada y unos gráficos espectacularmente detallados, Resident Evil 4 supone el renacimiento de un gigante del mundo de los videojuegos.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
+   "color1": "#232526",
+   "color2": "#414345"
+  },
+  {
+   "id": "phasmophobia",
+   "steam_appid": 739630,
+   "title": "Phasmophobia",
+   "developer": "Kinetic Games",
+   "genre": "Terror",
+   "price_cents": 22900,
+   "discount_pct": 0,
+   "release_year": 2020,
+   "tags": [
+    "Acción",
+    "Indie",
+    "Acceso anticipado",
+    "Un jugador",
+    "Multijugador"
+   ],
+   "description": "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg",
+   "color1": "#232526",
+   "color2": "#414345"
+  },
+  {
+   "id": "lethal-company",
+   "steam_appid": 1966720,
+   "title": "Lethal Company",
+   "developer": "Zeekerss",
+   "genre": "Terror",
+   "price_cents": 12399,
+   "discount_pct": 0,
+   "release_year": 2023,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Indie",
+    "Acceso anticipado",
+    "Un jugador"
+   ],
+   "description": "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg",
+   "color1": "#232526",
+   "color2": "#414345"
+  },
+  {
+   "id": "counter-strike-2",
+   "steam_appid": 730,
+   "title": "Counter-Strike 2",
+   "developer": "Valve",
+   "genre": "Shooter",
+   "price_cents": 0,
+   "discount_pct": 0,
+   "release_year": 2012,
+   "tags": [
+    "Acción",
+    "Free to Play",
+    "Multijugador"
+   ],
+   "description": "Durante las dos últimas décadas, Counter‑Strike ha proporcionado una experiencia competitiva de primer nivel para los millones de jugadores de todo el mundo que contribuyeron a darle forma. Ahora el próximo capítulo en la historia de CS está a punto de comenzar. Hablamos de Counter‑Strike 2.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg",
+   "color1": "#000428",
+   "color2": "#004e92"
+  },
+  {
+   "id": "helldivers-2",
+   "steam_appid": 553850,
+   "title": "HELLDIVERS 2",
+   "developer": "Arrowhead Game Studios",
+   "genre": "Shooter",
+   "price_cents": 69900,
+   "discount_pct": 0,
+   "release_year": 2024,
+   "tags": [
+    "Acción",
+    "Multijugador",
+    "Cooperativo",
+    "Cooperativo en línea"
+   ],
+   "description": "La última línea de ataque de la galaxia. Alístate en los Helldivers y únete a la lucha por la libertad en una galaxia hostil en un juego de disparos en tercera persona rápido, frenético y feroz.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/1ce535d4e78dacd9c834b3966eef37a25fc7cffb/header_spanish.jpg",
+   "color1": "#000428",
+   "color2": "#004e92"
+  },
+  {
+   "id": "sid-meiers-civilization-vi",
+   "steam_appid": 289070,
+   "title": "Sid Meier’s Civilization VI",
+   "developer": "Firaxis Games",
+   "genre": "Estrategia",
+   "price_cents": 59900,
+   "discount_pct": 0,
+   "release_year": 2016,
+   "tags": [
+    "Estrategia",
+    "Un jugador",
+    "Multijugador",
+    "JcJ"
+   ],
+   "description": "Expande tu imperio, haz avanzar tu cultura y enfréntate a los mejores líderes de la historia. ¿Podrá tu civilización superar la prueba del tiempo?",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg",
+   "color1": "#83a4d4",
+   "color2": "#b6fbff"
+  },
+  {
+   "id": "dota-2",
+   "steam_appid": 570,
+   "title": "Dota 2",
+   "developer": "Valve",
+   "genre": "Estrategia",
+   "price_cents": 0,
+   "discount_pct": 0,
+   "release_year": 2013,
+   "tags": [
+    "Acción",
+    "Estrategia",
+    "Free to Play",
+    "Multijugador",
+    "Cooperativo"
+   ],
+   "description": "Cada día, millones de jugadores de todo el mundo entran en batalla como uno de los más de cien héroes de Dota. Y no importa si es su décima hora de juego o la milésima, siempre hay algo nuevo que descubrir.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg",
+   "color1": "#83a4d4",
+   "color2": "#b6fbff"
+  },
+  {
+   "id": "balatro",
+   "steam_appid": 2379780,
+   "title": "Balatro",
+   "developer": "LocalThunk",
+   "genre": "Cartas",
+   "price_cents": 17899,
+   "discount_pct": 0,
+   "release_year": 2024,
+   "tags": [
+    "Casual",
+    "Indie",
+    "Estrategia",
+    "Un jugador"
+   ],
+   "description": "El roguelike de póker. Balatro es un hipnótico y genial constructor de mazos donde podrás jugar manos ilegales de póker, descubrir comodines que alterarán tus partidas y activar combos impresionantes que dispararán tu adrenalina.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg",
+   "color1": "#8e2de2",
+   "color2": "#4a00e0"
+  },
+  {
+   "id": "slay-the-spire",
+   "steam_appid": 646570,
+   "title": "Slay the Spire",
+   "developer": "Mega Crit",
+   "genre": "Cartas",
+   "price_cents": 29000,
+   "discount_pct": 0,
+   "release_year": 2019,
+   "tags": [
+    "Indie",
+    "Estrategia",
+    "Un jugador"
+   ],
+   "description": "Hemos fusionado juegos de cartas y roguelikes para crear el mejor juego de cartas para un solo jugador que pudiéramos. Crea un mazo único, encuentra criaturas extrañas, descubre reliquias de inmenso poder y mata La Aguja.",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
+   "color1": "#8e2de2",
+   "color2": "#4a00e0"
+  },
+  {
+   "id": "valheim",
+   "steam_appid": 892970,
+   "title": "Valheim",
+   "developer": "Iron Gate AB",
+   "genre": "Supervivencia",
+   "price_cents": 35000,
+   "discount_pct": 10,
+   "release_year": 2026,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Indie",
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "Un juego colaborativo de exploración y supervivencia para 1-10 jugadores, ambientado en un más allá generado por procedimientos e inspirado en la cultura vikinga. ¡Lucha, construye y conquista tu camino hacia una saga digna del patrocinio de Odín!",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/df65cafab20dae97a243c7cc988e8bf959e4b906/header.jpg",
+   "color1": "#56ab2f",
+   "color2": "#a8e063"
+  },
+  {
+   "id": "terraria",
+   "steam_appid": 105600,
+   "title": "Terraria",
+   "developer": "Re-Logic",
+   "genre": "Supervivencia",
+   "price_cents": 12399,
+   "discount_pct": 0,
+   "release_year": 2011,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Indie",
+    "Rol",
+    "Un jugador"
+   ],
+   "description": "¡Cava, lucha, explora, construye! Con este juego de aventuras repleto de acción nada es imposible. ¡Pack de Cuatro también disponible!",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg",
+   "color1": "#56ab2f",
+   "color2": "#a8e063"
+  },
+  {
+   "id": "stardew-valley",
+   "steam_appid": 413150,
+   "title": "Stardew Valley",
+   "developer": "ConcernedApe",
+   "genre": "Simulación",
+   "price_cents": 14999,
+   "discount_pct": 0,
+   "release_year": 2016,
+   "tags": [
+    "Indie",
+    "Rol",
+    "Simuladores",
+    "Un jugador",
+    "Multijugador"
+   ],
+   "description": "Acabas de heredar la vieja parcela agrícola de tu abuelo de Stardew Valley. Decides partir hacia una nueva vida con unas herramientas usadas y algunas monedas. ¿Te ves capaz de vivir de la tierra y convertir estos campos descuidados en un hogar próspero?",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
+   "color1": "#f12711",
+   "color2": "#f5af19"
+  },
+  {
+   "id": "portal-2",
+   "steam_appid": 620,
+   "title": "Portal 2",
+   "developer": "Valve",
+   "genre": "Puzzle",
+   "price_cents": 12999,
+   "discount_pct": 0,
+   "release_year": 2011,
+   "tags": [
+    "Acción",
+    "Aventura",
+    "Un jugador",
+    "Multijugador",
+    "Cooperativo"
+   ],
+   "description": "¡La «Iniciativa de Prueba Perpetua» se ha ampliado, permitiéndote ahora diseñar puzles cooperativos para ti y tus amigos!",
+   "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/faffc0f560786e2f05104a8d2fac837c6969bf13/header.jpg",
+   "color1": "#c79081",
+   "color2": "#dfa579"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+# Dependencias para correr todo en local sin Docker (iniciar.bat).
+# Cada microservicio tiene ademas su propio requirements.txt para su contenedor.
+Flask>=3.1
+flask-cors>=5.0
+requests>=2.32
+SQLAlchemy>=2.0
